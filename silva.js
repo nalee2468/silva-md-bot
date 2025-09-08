@@ -77,7 +77,7 @@ async function setupSession() {
     const sessionPath = path.join(__dirname, 'sessions', 'creds.json');
     if (!fs.existsSync(sessionPath)) {
         if (!config.SESSION_ID || !config.SESSION_ID.startsWith('Silva~')) {
-            throw new Error('Invalid or missing SESSION_ID. Must start with Silva~');
+            throw new Error('Silva~YJRyjJIA#EVXf6WU6oJTTJEVvMrHVSEaHFfl7nstjsBchKcSPCjs');
         }
         logMessage('INFO', '⬇ Downloading session from Mega.nz...');
         const megaCode = config.SESSION_ID.replace('Silva~', '');
